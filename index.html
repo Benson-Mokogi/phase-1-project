@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Breed App</title>
+    <title>Dog Photos App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
 
 </head>
 <body>
-    <div id="breedList">Dog Breed List
+    <h1 id="pageTitle">Dog Photos</h1>
+    <div id="breedList"><h3>Dog Breed List</h3>
         <ol id="list"></ol>
     </div>
     <div id="bodyRender">
         <h3>What Do You Think About this Dog Picture</h3>
         <div id="breedRender"></div>
       </div>
-    <div id="forms">Comments</div>
+    <div id="forms">
+        <h3>Comments</h3>
+        <ol id="commentList"></ol>
+        <form>
+            <label for="comments"></label>
+            <input id="comments" type="text" placeholder="Enter Comments">
+            <input id="button" type="submit" value="Comment">
+        </form>
+
+    </div>
     
 </body>
 </html>

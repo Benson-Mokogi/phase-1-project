@@ -46,12 +46,15 @@ function renderOnClick(dogNameObject){
     //const img = document.createElement("img")
     //img.src = dogNameObject.src
     const cardOtherDogs = `
-    <h3>${dogNameObject.name}</h3>
+    <h4>Breed Name: ${dogNameObject.name}</h4>
     <img src="${dogNameObject.src}"/>
     `;
 
     document.getElementById("breedRender").innerHTML = ''
     document.getElementById("breedRender").innerHTML=cardOtherDogs
+
+    document.querySelector("#commentList").innerHTML=''
+
 }
 
 // Add an event listener that clears the rendered image when the breed list is clicked
@@ -62,9 +65,21 @@ function renderFirstDog(dogArray){
     console.log(dogArray[0].src)
 
     const cardFirstDog = `
-    <h3>${dogArray[0].name}</h3>
+    <h4>Breed Name: ${dogArray[0].name}</h4>
     <img src="${dogArray[0].src}"/>
     `;
     document.getElementById("breedRender").innerHTML=cardFirstDog;
 
 }
+
+document.querySelector("#button").addEventListener("click", event =>{
+    event.preventDefault()
+    const input = document.getElementById("comments").value
+    const li = document.createElement("li")
+    li.textContent = input
+    console.log(li)
+
+    document.querySelector("#commentList").appendChild(li)
+})
+
+
