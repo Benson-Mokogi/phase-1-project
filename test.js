@@ -4,7 +4,7 @@ let dogArray = [];
 
 // Fetch the data from the API using a callback function once the DOM loads
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://dog.ceo/api/breeds/image/random/10")
+    fetch("https://dog.ceo/api/breeds/image/random/3")
     .then(res => res.json())
     .then(data => {
         data.message.map(data => renderBreed(data));
