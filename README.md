@@ -24,8 +24,14 @@ click: Clears the rendered image when the breed list is clicked.
 click: Allows users to submit comments about the displayed image.
 
 # Functions
-renderBreed(data): Renders the list of breed from the fetched data. It creates a dogNameObject containing the breed name and image url, appends the breed name to the list in the DOM, adds a click listener to the breed name, and pushes the dogNameObject to the dogArray.
-renderOnClick(dogNameObject): Renders the dog image when a breed name is clicked. It clears the previously rendered image, and displays the new image along with the breed name. It also clears any previously entered comments.
-renderFirstDog(dogArray): Renders the first dog image from the dogArray.
+# renderBreed(data): 
+Renders the list of breed from the fetched data. It creates a dogNameObject containing the breed name and image url, appends the breed name to the list in the DOM, adds a click listener to the breed name, and pushes the dogNameObject to the dogArray.
+
+# renderOnClick(dogNameObject):
+Renders the dog image when a breed name is clicked. It clears the previously rendered image, and displays the new image along with the breed name. It also clears any previously entered comments.
+
+# renderFirstDog(dogArray):
+Renders the first dog image from the dogArray.
+
 ## API Used
 This project fetches data from the following API: https://dog.ceo/api/breeds/image/random/10.
