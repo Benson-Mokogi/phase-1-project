@@ -3,9 +3,6 @@
 ### Pet Project: Dog Photos
 This project is a web page that displays a list of dog breeds and their respective images. When a breed name is clicked, the corresponding image will be displayed. Additionally, users can leave comments about the displayed images.
 
-## Getting Started
-To view this project, simply open the index.html file in your web browser.
-
 ## Usage
 Upon loading the web page, a list of 10 random dog breeds with their respective names will be displayed. When a breed name is clicked, the corresponding image will be displayed. Users can leave comments about the displayed image by entering text into the input field and clicking the "Submit" button. The entered comments will be displayed underneath the image.
 
