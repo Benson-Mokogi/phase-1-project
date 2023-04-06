@@ -28,7 +28,7 @@ Renders the list of breed from the fetched data. It creates a dogNameObject cont
 Renders the dog image when a breed name is clicked. It clears the previously rendered image, and displays the new image along with the breed name. It also clears any previously entered comments.
 
 # renderFirstDog(dogArray):
-Renders the first dog image from the dogArray.
+Renders the first dog image from the dogArray once the DOM finishes loading.
 
 ## API Used
 This project fetches data from the following API: https://dog.ceo/api/breeds/image/random/10.
